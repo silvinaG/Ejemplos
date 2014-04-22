@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Inicio de sesión</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="3">
+                <h:outputText value="Usuario"/>
+                <h:inputText label="Usuario" id="usuario" value="#{loginBean1.user}" required="true"/>
+                <h:message for="usuario"/>
+                <h:outputText value="Clave"/>
+                <h:inputSecret label="Contraseña" id="clave" value="#{loginBean1.clave}" required="true"/>
+                <h:message for="clave"/>                
+            </h:panelGrid>
+            <h:commandButton action="ingreso" value="Login"/>
+        </h:form>
+    </h:body>
+</html>
+
